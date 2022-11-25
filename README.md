@@ -39,6 +39,7 @@ import { provideAuth, getAuth } from '@angular/fire/auth';
 
 Here are complete lists of AngularFire 7 methods:
 
+```
 applyActionCode	 
 authInstance$	 
 authState	 
@@ -125,6 +126,7 @@ user
 UserProfile	 
 verifyBeforeUpdateEmail	 
 verifyPasswordResetCode	
+```
 
 
 
