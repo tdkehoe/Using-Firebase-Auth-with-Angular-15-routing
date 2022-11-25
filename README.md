@@ -1,8 +1,19 @@
 # Using Firebase Auth with Angular 15 Routing
 
+# AngularFire?
+
+AngularFire 7 has libraries for Auth and AuthGuard:
+
+```js
+import { provideAuth, getAuth, } from '@angular/fire/auth';
+import { AuthPipe, AuthGuard, AuthGuardModule, } from '@angular/fire/auth-guard';
+```
+
+There's no documentation for these libraries. I'll list all the methods at the end of this tutorial/
+
 ## Get rid of AngularFire 6 references
 
-Before anything else, get rid of all references to AngularFire 6. The directory `@angular/fire/compat` is AngularFire 6. For example, 
+Get rid of any references to AngularFire 6. The directory `@angular/fire/compat` is AngularFire 6. For example, 
 
 ```js
 import { AngularFireAuthGuard } from '@angular/fire/compat/auth-guard';
@@ -23,4 +34,97 @@ import { provideAuth, getAuth } from '@angular/fire/auth';
 ```
 
 # Import Auth into `app-routing.module.ts`
+
+# AngularFire 7 Methods
+
+Here are complete lists of AngularFire 7 methods:
+
+applyActionCode	 
+authInstance$	 
+authState	 
+beforeAuthStateChanged	 
+browserLocalPersistence	 
+browserPopupRedirectResolver	 
+browserSessionPersistence	 
+checkActionCode	 
+CompleteFn	 
+confirmPasswordReset	 
+connectAuthEmulator	 
+createUserWithEmailAndPassword	 
+CustomParameters	 
+debugErrorMap	 
+deleteUser	 
+EmailAuthCredential	 
+EmailAuthProvider	 
+ErrorFn	 
+FacebookAuthProvider	 
+FactorId	 
+fetchSignInMethodsForEmail	 
+getAdditionalUserInfo	 
+getAuth	 
+getIdToken	 
+getIdTokenResult	 
+getMultiFactorResolver	 
+getRedirectResult	 
+GithubAuthProvider	 
+GoogleAuthProvider	 
+idToken	 
+indexedDBLocalPersistence	 
+initializeAuth	 
+inMemoryPersistence	 
+isSignInWithEmailLink	 
+linkWithCredential	 
+linkWithPhoneNumber	 
+linkWithPopup	 
+linkWithRedirect	 
+NextFn	 
+NextOrObserver	 
+OAuthCredential	 
+OAuthProvider	 
+onAuthStateChanged	 
+onIdTokenChanged	 
+OperationType	 
+parseActionCodeURL	 
+PhoneAuthCredential	 
+PhoneAuthProvider	 
+PhoneInfoOptions	 
+PhoneMultiFactorGenerator	 
+prodErrorMap	
+provideAuth
+ProviderId	 
+reauthenticateWithCredential	 
+reauthenticateWithPhoneNumber	 
+reauthenticateWithPopup	 
+reauthenticateWithRedirect	 
+RecaptchaVerifier	 
+reload	 
+SAMLAuthProvider	 
+sendEmailVerification	 
+sendPasswordResetEmail	 
+sendSignInLinkToEmail	 
+setPersistence	 
+signInAnonymously	 
+SignInMethod	 
+signInWithCredential	 
+signInWithCustomToken	 
+signInWithEmailAndPassword	 
+signInWithEmailLink	 
+signInWithPhoneNumber	 
+signInWithPopup	 
+signInWithRedirect	 
+signOut	 
+unlink	 
+Unsubscribe	 
+updateCurrentUser	 
+updateEmail	 
+updatePassword	 
+updatePhoneNumber	 
+updateProfile	 
+useDeviceLanguage	 
+user	 
+UserProfile	 
+verifyBeforeUpdateEmail	 
+verifyPasswordResetCode	
+
+
 
